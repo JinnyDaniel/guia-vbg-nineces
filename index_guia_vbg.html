@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de recomendaciones pedagógicas</title>
+<style>
+:root{
+--verde:#2D6A4F;
+--morado:#6A4C93;
+--naranja:#F4A261;
+--gris:#F7F8FA;
+--texto:#333;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:var(--gris);color:var(--texto)}
+header{
+background:linear-gradient(135deg,var(--verde),var(--morado));
+color:white;text-align:center;padding:70px 20px;
+}
+header h1{max-width:1000px;margin:auto;font-size:2.3rem}
+header p{max-width:850px;margin:20px auto 0}
+.container{max-width:1200px;margin:auto;padding:40px 20px}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:16px;
+margin-bottom:30px;
+}
+.card{
+background:white;
+border:none;
+border-radius:18px;
+padding:24px;
+cursor:pointer;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+transition:.25s;
+font-size:1rem;
+font-weight:600;
+color:var(--verde);
+}
+.card:hover{transform:translateY(-4px)}
+.content{
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+min-height:350px;
+}
+.content h2{color:var(--verde);margin-bottom:15px}
+.content h3{color:var(--morado);margin:20px 0 10px}
+.content ul{margin-left:20px}
+.content li{margin-bottom:10px}
+.tip{
+margin-top:20px;
+padding:16px;
+background:#FFF3E0;
+border-left:5px solid var(--naranja);
+border-radius:10px;
+}
+footer{
+margin-top:50px;
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+.fade{animation:fade .35s ease}
+@keyframes fade{
+from{opacity:0;transform:translateY(12px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Guía de recomendaciones pedagógicas para la prevención de violencias basadas en género en las niñeces</h1>
+<p>Seleccione un eje para consultar las recomendaciones disponibles en la guía.</p>
+</header>
+
+<div class="container">
+
+<div class="grid">
+<button class="card" onclick="showAxis('e1')">🗣️ Lenguaje</button>
+<button class="card" onclick="showAxis('e2')">⚖️ Disciplina</button>
+<button class="card" onclick="showAxis('e3')">🧍 Cuerpo</button>
+<button class="card" onclick="showAxis('e4')">🏫 Espacios</button>
+<button class="card" onclick="showAxis('e5')">📚 Currículo</button>
+<button class="card" onclick="showAxis('e6')">👨‍👩‍👧 Familias</button>
+<button class="card" onclick="showAxis('e7')">🌎 Inclusión</button>
+<button class="card" onclick="showAxis('e8')">👩‍🏫 Docentes</button>
+</div>
+
+<div id="contenido" class="content">
+<h2>Bienvenido</h2>
+<p>Seleccione un eje para visualizar la información.</p>
+</div>
+
+</div>
+
+<footer>
+Guía pedagógica para la prevención de violencias basadas en género en las niñeces
+</footer>
+
+<script>
+const data={
+e1:`
+<h2>🗣️ Eje 1. El lenguaje como punto de reconocimiento</h2>
+<p>El lenguaje no es un canal neutro de comunicación: en la escuela se convierte en uno de los principales dispositivos pedagógicos de género. Nombrar de forma intencional y diversa es un acto político que visibiliza y valida a todas las niñeces más allá del binarismo.</p>
+<h3>Recomendaciones</h3>
+<ul>
+<li>Usa un lenguaje en donde se reconozca a niñas, niños y niñeces diversas.</li>
+<li>Promueve el reconocimiento de otras culturas desde las expresiones y formas de nombrar propias de niñeces de otras regiones.</li>
+<li>Fortalece las dinámicas de participación y escucha del grupo.</li>
+<li>Valida emociones y sus expresiones en todas las niñeces.</li>
+</ul>
+<div class="tip"><strong>Tip:</strong> Evita expresiones como “Por ser niña tienes mejor letra”, “Por ser niño eres más fuerte”, “Por ser niña debes ser más tierna” o “Por ser niño no debes llorar”.</div>
+`,
+e2:`
+<h2>⚖️ Eje 2. La disciplina una acción equitativa</h2>
+<p>Las acciones de disciplina son uno de los territorios donde más se inscriben los mandatos de género en los cuerpos de las niñeces. Pasar de una disciplina diferenciada y punitiva a una basada en el cuidado mutuo y la reflexión crítica es una de las prácticas transgresoras que puede asumir un docente.</p>
+<h3>Recomendaciones</h3>
+<ul>
+<li>Construye acuerdos de convivencia que tengan presente a todas las niñeces.</li>
+<li>Haz una pausa pedagógica para cuestionar colectivamente comentarios sexistas o discriminatorios.</li>
+<li>Evita la condescendencia hacia niñas y la sanción automática hacia niños.</li>
+<li>Revisa comentarios relacionados con apariencia física, cabello, ropa o aspecto.</li>
+</ul>
+<div class="tip"><strong>Tip:</strong> Reflexiona sobre el tono, los gestos, la condescendencia y los argumentos utilizados para justificar comportamientos.</div>
+`,
+e3:`
+<h2>🧍 Eje 3. El cuerpo para explorar</h2>
+<p>El cuerpo de las niñeces es un territorio simbólico donde se escriben y disputan los mandatos de género. La práctica pedagógica tiene el potencial de desarticular estas etiquetas y reconocer a las niñeces en sus diversidades.</p>
+<h3>Recomendaciones</h3>
+<ul>
+<li>Usa la pregunta “¿Y qué significa eso?” para cuestionar etiquetas corporales.</li>
+<li>Conversa sobre diversidad estética como riqueza.</li>
+<li>Valora a las personas por sus acciones y capacidades, no por su apariencia.</li>
+<li>Promueve juegos y dinámicas que reconozcan habilidades diversas.</li>
+</ul>
+<div class="tip"><strong>Tip:</strong> Evita comentarios sobre corporalidades en el aula, incluyendo elogios o bromas sobre el aspecto físico.</div>
+`,
+e4:`"<h2>🏫 Eje 4. Los espacios escolares una oportunidad</h2><p>Contenido pendiente de incorporar en la guía.</p>",
+e5:`<h2>📚 Eje 5. Revisar y elegir: currículo y material educativo</h2><p>Contenido pendiente de incorporar en la guía.</p>`,
+e6:`<h2>👨‍👩‍👧 Eje 6. Trabajar en conjunto: familias y redes sociales</h2><p>Contenido pendiente de incorporar en la guía.</p>`,
+e7:`<h2>🌎 Eje 7. Más allá del papel: inclusión e interseccionalidad</h2><p>Contenido pendiente de incorporar en la guía.</p>`,
+e8:`<h2>👩‍🏫 Eje 8. Asumir, aprender y actuar entre docentes</h2><p>Contenido pendiente de incorporar en la guía.</p>`
+};
+
+function showAxis(id){
+const c=document.getElementById('contenido');
+c.innerHTML=data[id];
+c.classList.remove('fade');
+void c.offsetWidth;
+c.classList.add('fade');
+window.scrollTo({top:c.offsetTop-20,behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
