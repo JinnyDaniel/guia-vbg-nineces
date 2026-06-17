@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guía Pedagógica para la Prevención de Violencias Basadas en Género</title>
+
+<style>
+
+:root{
+--verde:#2D6A4F;
+--morado:#6A4C93;
+--naranja:#F4A261;
+--gris:#F8F9FA;
+--texto:#333;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:var(--gris);
+color:var(--texto);
+line-height:1.6;
+}
+
+.progress{
+position:fixed;
+top:0;
+left:0;
+height:6px;
+width:0%;
+background:var(--naranja);
+z-index:9999;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,var(--verde),var(--morado));
+color:white;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+max-width:900px;
+}
+
+.hero p{
+max-width:800px;
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+.btn{
+background:white;
+color:var(--verde);
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+color:var(--verde);
+margin-bottom:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+margin-bottom:20px;
+}
+
+.question{
+margin-bottom:25px;
+}
+
+button{
+padding:10px 15px;
+margin:5px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:var(--verde);
+color:white;
+}
+
+.result{
+margin-top:20px;
+font-weight:bold;
+}
+
+.timeline{
+display:flex;
+overflow-x:auto;
+gap:20px;
+padding:20px 0;
+}
+
+.step{
+min-width:220px;
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.eje{
+background:white;
+margin-bottom:20px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.eje-header{
+padding:20px;
+background:var(--verde);
+color:white;
+cursor:pointer;
+}
+
+.eje-content{
+display:none;
+padding:25px;
+}
+
+.tip{
+background:#FFF3E0;
+border-left:5px solid var(--naranja);
+padding:15px;
+margin-top:15px;
+}
+
+.checklist{
+margin-top:20px;
+}
+
+.checklist label{
+display:block;
+margin-bottom:10px;
+}
+
+.case{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.feedback{
+display:none;
+margin-top:15px;
+padding:15px;
+background:#E8F5E9;
+border-radius:10px;
+}
+
+textarea{
+width:100%;
+height:150px;
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:40px;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<section class="hero">
+
+<h1>
+Guía Pedagógica para la Prevención de Violencias Basadas en Género
+</h1>
+
+<p>
+Herramienta práctica para fortalecer ambientes escolares inclusivos,
+equitativos y protectores para todas las niñeces.
+</p>
+
+<a href="#diagnostico" class="btn">
+Comenzar recorrido
+</a>
+
+</section>
+
+<section id="diagnostico" class="container">
+
+<h2 class="section-title">
+Diagnóstico Inicial
+</h2>
+
+<div class="card">
+
+<div class="question">
+<p><strong>1.</strong> ¿Utilizas lenguaje inclusivo al dirigirte al grupo?</p>
+</div>
+
+<div class="question">
+<p><strong>2.</strong> ¿Aplicas los mismos criterios disciplinarios a todas las niñeces?</p>
+</div>
+
+<div class="question">
+<p><strong>3.</strong> ¿Revisas tus prácticas para evitar estereotipos de género?</p>
+</div>
+
+<p>
+Este autodiagnóstico sirve como punto de partida para la reflexión pedagógica.
+</p>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+Ruta de Transformación Pedagógica
+</h2>
+
+<div class="timeline">
+
+<div class="step">🗣️ Lenguaje</div>
+<div class="step">⚖️ Disciplina</div>
+<div class="step">🧍 Cuerpo</div>
+<div class="step">🏫 Espacios</div>
+<div class="step">📚 Currículo</div>
+<div class="step">👨‍👩‍👧 Familias</div>
+<div class="step">🌎 Inclusión</div>
+<div class="step">👩‍🏫 Docentes</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+Los 8 Ejes de Acción
+</h2>
+
+<div class="eje">
+
+<div class="eje-header" onclick="toggle(this)">
+🗣️ Eje 1. El lenguaje como punto de reconocimiento
+</div>
+
+<div class="eje-content">
+
+<p>
+El lenguaje no es un canal neutro de comunicación. Nombrar de forma intencional y diversa visibiliza y valida a todas las niñeces.
+</p>
+
+<ul>
+<li>Usa lenguaje inclusivo.</li>
+<li>Reconoce expresiones culturales diversas.</li>
+<li>Promueve participación equitativa.</li>
+<li>Valida emociones en todas las niñeces.</li>
+</ul>
+
+<div class="tip">
+Evita expresiones como:
+"Los niños no lloran" o
+"Por ser niña tienes mejor letra".
+</div>
+
+<div class="checklist">
+<h4>Lista de chequeo</h4>
+<label><input type="checkbox"> Utilizo lenguaje inclusivo.</label>
+<label><input type="checkbox"> Promuevo participación equitativa.</label>
+<label><input type="checkbox"> Evito expresiones sexistas.</label>
+</div>
+
+</div>
+</div>
+
+<div class="eje">
+
+<div class="eje-header" onclick="toggle(this)">
+⚖️ Eje 2. La disciplina como acción equitativa
+</div>
+
+<div class="eje-content">
+
+<ul>
+<li>Construye acuerdos colectivos.</li>
+<li>Promueve reflexión antes de sancionar.</li>
+<li>Evita disciplina diferenciada.</li>
+<li>Analiza los mensajes implícitos en las correcciones.</li>
+</ul>
+
+<div class="tip">
+Reflexiona sobre el tono, los gestos y los argumentos utilizados para justificar comportamientos.
+</div>
+
+</div>
+</div>
+
+<div class="eje">
+
+<div class="eje-header" onclick="toggle(this)">
+🧍 Eje 3. El cuerpo para explorar
+</div>
+
+<div class="eje-content">
+
+<ul>
+<li>Cuestiona etiquetas corporales.</li>
+<li>Valora la diversidad física.</li>
+<li>Promueve actividades inclusivas.</li>
+<li>Reconoce capacidades más allá de la apariencia.</li>
+</ul>
+
+<div class="tip">
+Evita comentarios sobre la apariencia física que reproduzcan estereotipos.
+</div>
+
+</div>
+</div>
+
+<div class="eje">
+<div class="eje-header" onclick="toggle(this)">
+🏫 Eje 4. Los espacios escolares
+</div>
+<div class="eje-content">
+<p>Contenido en desarrollo.</p>
+</div>
+</div>
+
+<div class="eje">
+<div class="eje-header" onclick="toggle(this)">
+📚 Eje 5. Currículo y material educativo
+</div>
+<div class="eje-content">
+<p>Contenido en desarrollo.</p>
+</div>
+</div>
+
+<div class="eje">
+<div class="eje-header" onclick="toggle(this)">
+👨‍👩‍👧 Eje 6. Familias y redes
+</div>
+<div class="eje-content">
+<p>Contenido en desarrollo.</p>
+</div>
+</div>
+
+<div class="eje">
+<div class="eje-header" onclick="toggle(this)">
+🌎 Eje 7. Inclusión e interseccionalidad
+</div>
+<div class="eje-content">
+<p>Contenido en desarrollo.</p>
+</div>
+</div>
+
+<div class="eje">
+<div class="eje-header" onclick="toggle(this)">
+👩‍🏫 Eje 8. Aprender y actuar entre docentes
+</div>
+<div class="eje-content">
+<p>Contenido en desarrollo.</p>
+</div>
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+Casos para Reflexión
+</h2>
+
+<div class="case">
+
+<p>
+"Los niños cargan las mesas y las niñas decoran el salón."
+</p>
+
+<button onclick="mostrar('r1')">
+Ver reflexión
+</button>
+
+<div id="r1" class="feedback">
+Esta práctica puede reforzar la asociación de determinadas tareas con un género específico.
+</div>
+
+</div>
+
+<div class="case">
+
+<p>
+"Juan llora mucho, parece una niña."
+</p>
+
+<button onclick="mostrar('r2')">
+Ver reflexión
+</button>
+
+<div id="r2" class="feedback">
+La expresión utiliza lo femenino como descalificación y puede constituir violencia simbólica.
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+Plan de Implementación
+</h2>
+
+<div class="timeline">
+
+<div class="step">
+<strong>Semana 1</strong><br>
+Lenguaje
+</div>
+
+<div class="step">
+<strong>Semana 2</strong><br>
+Disciplina
+</div>
+
+<div class="step">
+<strong>Semana 3</strong><br>
+Currículo
+</div>
+
+<div class="step">
+<strong>Semana 4</strong><br>
+Espacios
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+Mi Compromiso Pedagógico
+</h2>
+
+<div class="card">
+
+<p>
+¿Qué práctica transformaré primero?
+</p>
+
+<textarea placeholder="Escribe aquí tu compromiso..."></textarea>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>
+Construyendo espacios educativos más inclusivos
+</h3>
+
+<p>
+Guía de recomendaciones para docentes
+</p>
+
+</footer>
+
+<script>
+
+function toggle(element){
+const content = element.nextElementSibling;
+
+if(content.style.display === "block"){
+content.style.display = "none";
+}
+else{
+content.style.display = "block";
+}
+}
+
+function mostrar(id){
+document.getElementById(id).style.display = "block";
+}
+
+window.addEventListener("scroll",function(){
+
+const scrollTop=document.documentElement.scrollTop;
+
+const scrollHeight=
+document.documentElement.scrollHeight-
+document.documentElement.clientHeight;
+
+const progress=(scrollTop/scrollHeight)*100;
+
+document.getElementById("progress").style.width=
+progress+"%";
+
+});
+
+</script>
+
+</body>
+</html>
