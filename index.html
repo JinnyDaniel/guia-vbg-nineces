@@ -10,25 +10,18 @@
 Guía de recomendaciones para la prevención de violencias basadas en género en las niñeces
 </title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
-
 --verde:#2D6A4F;
 --verde-claro:#40916C;
 --morado:#6A4C93;
 --naranja:#F4A261;
-
---gris-fondo:#F8F9FA;
---gris-claro:#EEF1F4;
-
+--gris:#F8F9FA;
 --texto:#2D3436;
-
---sombra:
-0 10px 25px rgba(0,0,0,.08);
-
+--sombra:0 10px 30px rgba(0,0,0,.08);
 }
 
 *{
@@ -42,380 +35,174 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Montserrat',sans-serif;
-
-background:var(--gris-fondo);
-
+background:var(--gris);
 color:var(--texto);
-
-line-height:1.7;
-
+line-height:1.8;
 }
 
 .hero{
-
-background:
-linear-gradient(
-135deg,
-var(--verde),
-var(--morado)
-);
-
+background:linear-gradient(135deg,var(--verde),var(--morado));
 color:white;
-
 padding:90px 20px;
-
 text-align:center;
-
 }
 
 .hero-content{
-
 max-width:1000px;
 margin:auto;
-
 }
 
 .hero h1{
-
-font-size:clamp(2rem,4vw,3.5rem);
-
-margin-bottom:20px;
-
-}
-
-.hero h2{
-
-font-size:1.2rem;
-
-font-weight:500;
-
-margin-bottom:30px;
-
+font-size:clamp(2rem,4vw,3.6rem);
+margin-bottom:25px;
 }
 
 .hero-card{
-
 background:rgba(255,255,255,.12);
-
-backdrop-filter:blur(10px);
-
-padding:25px;
-
+backdrop-filter:blur(8px);
 border-radius:20px;
-
-max-width:800px;
-
+padding:30px;
+max-width:850px;
 margin:auto;
-
 }
 
 .hero-card p{
-
-margin-bottom:10px;
-
+margin-bottom:12px;
 }
 
 .container{
-
 max-width:1200px;
-
 margin:auto;
-
 padding:40px 20px;
-
 }
 
 .section-title{
-
-font-size:2rem;
-
-color:var(--verde);
-
-margin-bottom:20px;
-
 text-align:center;
-
-}
-
-.accordion{
-
-margin-bottom:60px;
-
+font-size:2rem;
+color:var(--verde);
+margin-bottom:25px;
 }
 
 .accordion-item{
-
 background:white;
-
 border-radius:15px;
-
 overflow:hidden;
-
-margin-bottom:12px;
-
 box-shadow:var(--sombra);
-
+margin-bottom:12px;
 }
 
 .accordion-header{
-
 width:100%;
-
-border:none;
-
 padding:20px;
-
-font-size:1rem;
-
-font-weight:600;
-
-text-align:left;
-
-cursor:pointer;
-
+border:none;
 background:white;
-
-transition:.3s;
-
-}
-
-.accordion-header:hover{
-
-background:#F5F5F5;
-
+text-align:left;
+font-weight:600;
+font-size:1rem;
+cursor:pointer;
 }
 
 .accordion-content{
-
 display:none;
-
 padding:25px;
-
 border-top:1px solid #eee;
-
-background:white;
-
 }
 
 .accordion-content.active{
-
 display:block;
-
-}
-
-.ejes-section{
-
-margin-top:50px;
-
 }
 
 .ejes-grid{
-
 display:grid;
-
 grid-template-columns:
 repeat(auto-fit,minmax(250px,1fr));
-
 gap:20px;
-
+margin-top:40px;
 margin-bottom:40px;
-
 }
 
 .eje-card{
-
 background:white;
-
 border:none;
-
-border-radius:20px;
-
+border-radius:18px;
 padding:25px;
-
 cursor:pointer;
-
-font-size:1rem;
-
 font-weight:600;
-
+font-size:1rem;
 color:var(--verde);
-
 box-shadow:var(--sombra);
-
 transition:.3s;
-
-min-height:120px;
-
 }
 
 .eje-card:hover{
-
-transform:translateY(-6px);
-
+transform:translateY(-5px);
 }
 
 #contenido-eje{
-
-background:white;
-
-padding:40px;
-
-border-radius:25px;
-
-box-shadow:var(--sombra);
-
 display:none;
-
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:var(--sombra);
 }
 
 #contenido-eje h2{
-
 color:var(--verde);
-
 margin-bottom:20px;
-
 }
 
 #contenido-eje h3{
-
 color:var(--morado);
-
 margin-top:25px;
-
-margin-bottom:10px;
-
+margin-bottom:15px;
 }
 
 #contenido-eje ul{
-
 margin-left:20px;
-
-margin-top:10px;
-
 }
 
 #contenido-eje li{
-
 margin-bottom:12px;
-
 }
 
 .reto{
-
-margin-top:30px;
-
-padding:25px;
-
+background:#FFF4E6;
 border-left:6px solid var(--naranja);
-
-background:#FFF6EC;
-
-border-radius:12px;
-
+padding:20px;
+margin-top:25px;
+border-radius:10px;
 }
 
 .reflexiones{
-
-margin-top:80px;
-
 background:white;
-
 padding:40px;
-
-border-radius:25px;
-
+margin-top:60px;
+border-radius:20px;
 box-shadow:var(--sombra);
-
-}
-
-.reflexiones h2{
-
-color:var(--verde);
-
-margin-bottom:20px;
-
-}
-
-.reflexiones blockquote{
-
-font-size:1.1rem;
-
-font-style:italic;
-
-padding-left:20px;
-
-border-left:5px solid var(--morado);
-
-margin-top:20px;
-
 }
 
 .footer{
-
-margin-top:60px;
-
 background:#222;
-
 color:white;
-
 text-align:center;
-
 padding:30px;
-
+margin-top:60px;
 }
 
 .top-btn{
-
 position:fixed;
-
-bottom:25px;
-
-right:25px;
-
+bottom:20px;
+right:20px;
 width:55px;
-
 height:55px;
-
 border:none;
-
 border-radius:50%;
-
 background:var(--verde);
-
 color:white;
-
-font-size:1.3rem;
-
+font-size:1.2rem;
 cursor:pointer;
-
-box-shadow:var(--sombra);
-
 display:none;
-
-}
-
-.top-btn:hover{
-
-background:var(--verde-claro);
-
-}
-
-@media(max-width:768px){
-
-.hero{
-
-padding:60px 20px;
-
-}
-
-#contenido-eje{
-
-padding:25px;
-
-}
-
 }
 
 </style>
@@ -432,20 +219,15 @@ padding:25px;
 Guía de recomendaciones para la prevención de violencias basadas en género en las niñeces
 </h1>
 
-<h2>
-Tesis de investigación
-</h2>
-
 <div class="hero-card">
 
 <p>
-<strong>
-Prácticas pedagógicas de docentes de Bogotá y prevención de violencias basadas en género en las niñeces
-</strong>
+<strong>Tesis de investigación:</strong>
+Prácticas pedagógicas de docentes de Bogotá y prevención de violencias basadas en género en las niñeces.
 </p>
 
 <p>
-Maestría en Estudios de Género y Educación para la Sexualidad
+Maestría en educación en estudios de género y educación para la sexualidad
 </p>
 
 <p>
@@ -454,10 +236,7 @@ Jennifer Buitrago López
 </p>
 
 <p>
-<strong>Contacto:</strong>
-</p>
-
-<p>
+<strong>Datos contacto:</strong>
 jenniferbuitragolopez@gmail.com
 </p>
 
@@ -478,7 +257,8 @@ Introducción
 </h2>
 
 <div class="accordion">
-  <div class="accordion-item">
+
+<div class="accordion-item">
 
 <button class="accordion-header">
 ¿De dónde sale?
@@ -501,7 +281,6 @@ Es un aporte en búsqueda de materializar la teoría en herramientas concretas q
 </div>
 
 </div>
-
 <div class="accordion-item">
 
 <button class="accordion-header">
@@ -563,7 +342,7 @@ Fomentar la reflexión crítica del propio rol docente para consolidar entornos 
 <div class="accordion-content">
 
 <p>
-Esta guía de recomendaciones está orientada a docentes de aula, docentes del área de orientación, docentes de apoyo y directivas docentes para que vinculen en sus prácticas pedagógicas acciones que aporten a la prevención de las violencias basadas en género en las niñeces que acompañan en la cotidianidad.
+Esta guía de recomendaciones esta orientada a docentes de aula, docentes del área de orientación, docentes de apoyo y directivas docentes para que vinculen en sus prácticas pedagógicas acciones que aporten a la prevención de las violencias basadas en género en las niñeces que acompañan en la cotidianidad.
 </p>
 
 <p>
@@ -591,11 +370,11 @@ Dispositivos pedagógicos de género
 </h3>
 
 <p>
-Es un concepto propuesto por García (2004) que refiere a todas aquellas reglas, hábitos, comentarios, espacios y rutinas de la escuela que moldean a las niñeces para que encajen en roles hegemónicos tradicionales.
+Es un concepto propuesto por García (2004) que refiere a todas aquellas reglas, hábitos, comentarios, espacios y rutinas de la escuela que, muchas veces moldean a las niñeces para que encajen en roles hegemónicos tradicionales, además de cumplir con una mirada binaria de pasividad/fuerza, rosado/azul, silencio/acción, entre otras.
 </p>
 
 <p>
-Son mecanismos invisibles que reproducen desigualdades dentro de la escuela y las prácticas pedagógicas.
+Son mecanismos invisibles que reproducen las desigualdades dentro de la escuela y las prácticas pedagógicas.
 </p>
 
 <h3>
@@ -603,11 +382,15 @@ Pedagogía del afecto
 </h3>
 
 <p>
-Es una propuesta desde las pedagogías críticas de hooks (2016), que plantea enseñar desde acciones de transgresión, validación emocional y reconocimiento de las niñeces como seres completos.
+Es una propuesta desde las pedagogías críticas de hooks (2016), que propone la pedagogía desde acciones de transgresión.
 </p>
 
 <p>
-Transforma la práctica pedagógica en una posibilidad de resistencia y cuestionamiento a los roles impuestos.
+Significa enseñar desde la validación emocional, reconociendo a las niñeces como seres completos y con las mismas oportunidades.
+</p>
+
+<p>
+Es transformar la práctica pedagógica en una posibilidad de resistencia y cuestionamiento a los roles impuestos, además de recuperar la emocionalidad y la pasión dentro del aula.
 </p>
 
 </div>
@@ -623,11 +406,7 @@ Transforma la práctica pedagógica en una posibilidad de resistencia y cuestion
 <div class="accordion-content">
 
 <p>
-Las violencias basadas en género en la educación primaria rara vez se presentan únicamente mediante agresiones físicas directas.
-</p>
-
-<p>
-Se arraigan en el currículo oculto a través de violencias simbólicas y culturales que resultan imperceptibles y legitimadas en el relacionamiento diario.
+Las violencias basadas en género en la educación primaria rara vez se presentan únicamente mediante agresiones físicas directas; se arraigan en el currículo oculto a través de violencias simbólicas y culturales que resultan imperceptibles y legitimadas en el relacionamiento diario.
 </p>
 
 <p>
@@ -655,11 +434,11 @@ La guía de recomendaciones se estructura en ocho ejes de acción cotidiana dent
 </p>
 
 <p>
-Los primeros cinco abordan los componentes directos del quehacer pedagógico: lenguaje, disciplina, cuerpo, espacio y currículo escolar.
+Los primeros cinco abordan los componentes directos del quehacer pedagógico: el lenguaje, la disciplina, el cuerpo, el espacio y el currículo escolar.
 </p>
 
 <p>
-Los tres ejes finales abordan barreras y tensiones estructurales que exceden el aula, proponiendo estrategias para el trabajo con familias, la mirada interseccional y la transformación del propio grupo docente.
+Los tres ejes finales abordan las barreras y tensiones estructurales que exceden el aula, en el que se proponen estrategias para el trabajo con familias, la mirada interseccional y la transformación del propio grupo docente.
 </p>
 
 </div>
@@ -667,8 +446,6 @@ Los tres ejes finales abordan barreras y tensiones estructurales que exceden el 
 </div>
 
 </div>
-
-<section class="ejes-section">
 
 <h2 class="section-title">
 Ejes de acción pedagógica
@@ -703,12 +480,12 @@ El currículo y los materiales educativos
 
 <button class="eje-card" onclick="mostrarEje('eje6')">
 👨‍👩‍👧<br><br>
-El trabajo con las familias y el desafío digital
+Trabajo con las familias y desafío digital
 </button>
 
 <button class="eje-card" onclick="mostrarEje('eje7')">
 🌎<br><br>
-Niñeces, diversidades y sin silencios
+Niñeces diversidades y sin silencios
 </button>
 
 <button class="eje-card" onclick="mostrarEje('eje8')">
@@ -720,7 +497,418 @@ Redes docentes y pedagogías del afecto
 
 <div id="contenido-eje"></div>
 
-</section>
+<script>
+
+const ejes = {
+
+eje1: `
+
+<h2>🗣️ Eje 1. El lenguaje que reconoce</h2>
+
+<p>
+El lenguaje no es un canal neutro de comunicación: en la escuela se convierte en uno de los principales dispositivos pedagógicos de género (García, 2004). Nombrar de forma intencional y diversa es un acto político que visibiliza y valida a todas las niñeces más allá del binarismo.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Usa un lenguaje en donde se reconozca a niñas, niñas y niñeces diversas. De este modo se evita el masculino dominante -ejemplo: niños buenos días- como única forma de nombrar al grupo.
+</li>
+
+<li>
+Promueve el reconocimiento de otras culturas desde las expresiones y formas de nombrar propias de niñeces de otras regiones sin caer en la corrección que desvalorice su origen.
+</li>
+
+<li>
+Fortalece las dinámicas de participación y escucha del grupo, donde las niñeces tengan las mismas oportunidades para expresar sus ideas, sin jerarquías de voz.
+</li>
+
+<li>
+Valida las emociones y sus expresiones, como: la tristeza, el miedo, el enojo, el asco, la felicidad y la sorpresa en todas las niñeces ayuda al relacionamiento equitativo.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Evita expresiones que hagan énfasis en las habilidades y roles esperados desde una mirada. Ejemplo: Por ser niña tienes mejor letra, por ser niño eres más fuerte, por ser niña debes ser más tierna, por ser niño no debes llorar.
+</p>
+
+</div>
+
+`,
+
+eje2: `
+
+<h2>⚖️ Eje 2. La disciplina desde el cuidado</h2>
+
+<p>
+Las acciones de disciplina son uno de los territorios donde más se inscriben los mandatos de género en los cuerpos de las niñeces. Pasar de una disciplina diferenciada y punitiva a una basada en el cuidado mutuo y la reflexión crítica es una de las prácticas transgresoras que puede asumir un docente.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Construye acuerdos de convivencia que tengan presente a todas las niñeces y aplique para todo el grupo.
+</li>
+
+<li>
+Haz una pausa pedagógica para preguntar y cuestionar colectivamente el significado e impacto de comentarios sexistas y de discriminación como acción restaurativa y de reflexión.
+</li>
+
+<li>
+Evita la condescendencia en los llamados de atención hacia niñas y la sanción automática hacia niños por sus comportamientos; ambas refuerzan estereotipos de pasividad/agresividad que sostienen las violencias basadas en género.
+</li>
+
+<li>
+Revisa los comentarios que se hacen frente a la apariencia física de forma diferenciada: la forma de llevar el cabello, la ropa o el aspecto, ninguno debe hacerse solo a niñas o solo a niños.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Reflexiona sobre el tono, los gestos, la condescendencia y los argumentos que se utilizan para justificar el comportamiento de las niñeces. El uso de la disciplina diferenciada no siempre es explícito.
+</p>
+
+</div>
+
+`,
+
+eje3: `
+
+<h2>🧍 Eje 3. El cuerpo libre de etiquetas</h2>
+
+<p>
+El cuerpo de las niñeces es un territorio simbólico donde se escriben y disputan los mandatos de género. La escuela produce —muchas veces sin intención— cuerpos etiquetados y dañados (Flores, 2016). La práctica pedagógica tiene el potencial de desarticular estas etiquetas y reconocer a las niñeces en sus diversidades.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Usa la pregunta ¿Y qué significa eso? para cuestionar expresiones de etiquetas corporales que discriminan y utilizan lo femenino como un insulto, ejemplo: “corre como una niña”, “parece niña llorando”.
+</li>
+
+<li>
+Conversa con las niñeces sobre diversidad estética como riqueza: gafas, cabello, tono de piel, peso y estatura, esto evita que sean motivos de burlas o señalamientos.
+</li>
+
+<li>
+Desarrolla actividades que valoren a las personas por sus acciones y capacidades, no por su apariencia o por cuánto se ajustan a una norma corporal.
+</li>
+
+<li>
+Vincula el desarrollo de juegos, dinámicas y diferentes deportes que desarrollen capacidades que tienen todas las niñeces. Así se evitan ideas como: “las niñas si bailan bien”, “solo los niños juegan futbol”.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Evita comentarios sobre corporalidades en el aula, incluyendo elogios o bromas sobre el aspecto físico que reproduzcan ideales hegemónicos de belleza y de formas del cuerpo. Ejemplo “la niña gordita de gafas”, “que lindo niño, todo un caballero”.
+</p>
+
+</div>
+
+`,
+
+eje4: `
+
+<h2>🏫 Eje 4. Los espacios compartidos</h2>
+
+<p>
+Los patios, pasillos, canchas y aulas no son territorios neutros: reproducen una cartografía de la desigualdad donde lo masculino ocupa el centro y lo femenino la periferia (García Suárez, 2004). Intervenir en la distribución del espacio es una práctica pedagógica de resistencia y de participación para todas las niñeces.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Implementa dinámicas y actividades mixtas y equitativas en el patio central para desdibujar las fronteras de género y las niñas sean desplazadas a la periferia.
+</li>
+
+<li>
+Diseña metodologías que organicen los grupos de forma diversa, evitando que el género, el aspecto físico, el origen o la raza condicionen los círculos de pertenencia en el aula.
+</li>
+
+<li>
+Fortalece la participación de las niñeces, en particular de las niñas en todos los escenarios de la escuela: laboratorios, biblioteca, patio, liderazgo de actividades y no solo en las aulas.
+</li>
+
+<li>
+Revisa que el uso de uniformes diferenciados no limite el movimiento y exploración de las niñeces, en caso tal, se puede proponer el uso de sudadera como vestimenta única.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Propicia otras estrategias que no impliquen prohibir el uso del balón en el descanso. El objetivo es que todas las niñeces habiten la cancha con las mismas posibilidades, no que nadie la use.
+</p>
+
+</div>
+
+`,
+
+
+eje5: `
+
+<h2>📚 Eje 5. El currículo y los materiales educativos</h2>
+
+<p>
+El currículo escolar decide qué saberes son legítimos y cuáles invisibilizados. Los materiales didácticos son portadores de significados que pueden legitimar la dominación (Freire, 1970). Ningún recurso es neutro: su selección y adaptación constituyen un acto político cotidiano del quehacer docente.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Propicia la revisión de las mallas curriculares para identificar y actualizar términos obsoletos o machistas, además de señalar los puntos para incluir un enfoque de género de manera transversal que aporte a la prevención de violencias basadas en género en las niñeces.
+</li>
+
+<li>
+Articula y transversaliza la educación integral de la sexualidad en todas las áreas de conocimiento a partir de los 8 ejes propuestos por UNESCO (2018): relaciones, comprensión del género, violencia y consentimiento, salud y bienestar, habilidades para la vida, el cuerpo y su desarrollo, y sexualidad y reproducción.
+</li>
+
+<li>
+Revisa de manera crítica y previa todo el material didáctico: imágenes, videos, libros y diapositivas para identificar y corregir sesgos de género, raza y cuerpo antes de usarlos.
+</li>
+
+<li>
+Diversifica las representaciones en los materiales: incluir corporalidades diversas, personas racializadas, personas de diferentes lugares y con diferentes condiciones físicas además de referentes femeninos y masculinos en áreas no tradicionales.
+</li>
+
+<li>
+Usa la literatura infantil como herramienta de prevención de violencias basadas en género: libros que cuestionen roles de género, aborden la migración, la diversidad étnica y la expresión emocional.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Evita que a nivel institucional las acciones de transversalización de la educación integral de la sexualidad y de prevención, se queden en fechas conmemorativas. El reto es convertir el enfoque de género en un hilo conductor del día a día escolar, visible en matemáticas, ciencias y todas las áreas del currículo.
+</p>
+
+</div>
+
+`,
+
+eje6: `
+
+<h2>👨‍👩‍👧 Eje 6. El trabajo con las familias y el desafío digital</h2>
+
+<p>
+Las prácticas transgresoras se enfrentan frecuentemente con barreras externas sostenidas por una moralidad conservadora de las familias que limitan las prácticas pedagógicas. En conjunto las redes sociales operan hoy como pedagogías de la crueldad (Segato, 2018) que legitiman el machismo a través de la "manósfera", instaurando en las niñeces discursos de dominación que neutralizan el trabajo del aula.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Genera espacios de diálogo con las familias donde la educación integral de la sexualidad no se presente como una amenaza a sus creencias, sino como una herramienta vital para la prevención del abuso y la protección de las niñeces.
+</li>
+
+<li>
+Abre debates críticos en el aula sobre los contenidos que las niñeces consumen en redes sociales o internet, cuestionando los falsos discursos de "empoderamiento masculino" basados en la dominación o la cosificación, en particular de niñas y mujeres.
+</li>
+
+<li>
+Vincula a las familias en actividades pedagógicas que deconstruyan la división sexual y la reproducción de estereotipos que generen posibilidades de experiencias a las niñeces.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Evita confrontar directamente las resistencias de las familias bajo el lema "con mis hijos no te metas". Transforma esa tensión posicionando el enfoque de género y la educación integral para la sexualidad como un asunto estricto de convivencia armónica, derechos humanos y cuidado de las niñeces.
+</p>
+
+</div>
+
+`,
+
+eje7: `
+
+<h2>🌎 Eje 7. Niñeces diversidades y sin silencios</h2>
+
+<p>
+La prevención de las violencias basadas en género se ve limitada al leerse desde una dimensión exclusivamente binaria, es decir niñas y niño, esta postura omite cruces con la etnicidad, el lugar de origen y la discapacidad. Negar la sexualidad en la discapacidad, por ejemplo, es un silencio institucional que expone a estas niñeces a mayores vulnerabilidades frente al abuso, además del desconocimiento de niñeces migrantes y nacidas en otras partes del país.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Adapta las herramientas de la educación integral para la sexualidad para las niñeces en condición de discapacidad, de acuerdo con sus lenguajes y capacidades cognitivas para brindarles el conocimiento como mecanismo de protección.
+</li>
+
+<li>
+Reconoce y valida la diversidad de acentos, modismos y expresiones de niñeces migrantes y de otras regiones. Además, evita hacer una corrección de uso de las palabras, esto funciona como un dispositivo de xenofobia.
+</li>
+
+<li>
+Propicia acciones que permitan a las niñeces reconocer diversidad de tonos de piel y la diversidad étnica para desmitificar el uso del término "color piel" relacionado con el tono durazno.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Cuando escuches que las niñeces repiten un comentario discriminatorio, racista o xenófobo aprendido en su entorno familiar, no lo dejes pasar ni lo castigues automáticamente. Haz una pausa y pregúntales: "¿Qué significa para ti eso?". Esto enseña a no reproducir los prejuicios de los adultos y a relacionarse desde el respeto.
+</p>
+
+</div>
+
+`,
+
+eje8: `
+
+<h2>👩‍🏫 Eje 8. Redes docentes y pedagogías del afecto</h2>
+
+<p>
+Desarticular las violencias basadas en género no puede depender del desgaste de algunos docentes ni limitarse a un trámite dirigido al área de orientación escolar. Además, de reflexionar cómo funciona el sistema educativo y permitir que docentes hombres acompañen a las niñeces en primera infancia y primaria, de este modo se rompe con la división sexista del cuidado.
+</p>
+
+<h3>Recomendaciones</h3>
+
+<ul>
+
+<li>
+Promueve que todo el equipo docente, independientemente de su área de conocimiento, asuma la prevención de las violencias basada en género como un compromiso ético político transversal. Esto evita que sea tarea exclusiva del área de orientación.
+</li>
+
+<li>
+Impulsa espacios de formación continua y horizontal entre pares docentes para revisar sesgos, miedos y tabúes en relación con la educación integral de la sexualidad. Además de compartir experiencias exitosas y transformar las resistencias ideológicas frente a los temas de género.
+</li>
+
+<li>
+Reflexiona sobre la participación de hombres docentes en la educación de la primera infancia y la primaria, abrir espacios de acompañamiento favorece que las niñeces convivan con referentes de masculinidad afectiva y no violenta.
+</li>
+
+</ul>
+
+<div class="reto">
+
+<strong>Reto pedagógico</strong>
+
+<p>
+Cuestiona tu propio lugar de enunciación y tus creencias, es necesario reconocer los miedos, los tabúes y sesgos que limitan el emprender prácticas pedagógicas que transgredan el cumplimiento de roles heteronormativos y binarios.
+</p>
+
+</div>
+
+`
+
+};
+
+
+function mostrarEje(eje){
+
+const contenedor =
+document.getElementById("contenido-eje");
+
+contenedor.innerHTML = ejes[eje];
+
+contenedor.style.display = "block";
+
+contenedor.scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+
+}
+
+/* ACORDEÓN - SOLO UNA CATEGORÍA ABIERTA */
+
+const headers =
+document.querySelectorAll(".accordion-header");
+
+headers.forEach(header => {
+
+header.addEventListener("click", () => {
+
+const contenido =
+header.nextElementSibling;
+
+document
+.querySelectorAll(".accordion-content")
+.forEach(item => {
+
+if(item !== contenido){
+
+item.classList.remove("active");
+
+}
+
+});
+
+contenido.classList.toggle("active");
+
+});
+
+});
+
+/* BOTÓN VOLVER ARRIBA */
+
+window.addEventListener("scroll",()=>{
+
+const boton =
+document.getElementById("topBtn");
+
+if(window.scrollY > 400){
+
+boton.style.display="block";
+
+}else{
+
+boton.style.display="none";
+
+}
+
+});
+
+function volverArriba(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
 <section class="reflexiones">
 
 <h2>
@@ -739,371 +927,61 @@ La verdadera transgresión ocurre en lo imperceptible de la práctica pedagógic
 Cada vez que un docente decide no dejar pasar un comentario sexista o permite que una niñez explore el mundo sin las ataduras de la norma, está desarmando las desigualdades.
 </p>
 
-<blockquote>
-De ahí la profunda necesidad de enseñar y acompañar a las niñeces desde la pedagogía del afecto (hooks, 2016), una postura ética y política que las reconoce genuinamente como seres completos y les otorga un lugar propio, seguro y libre de violencias dentro del aula.
-</blockquote>
+<p>
+De ahí la profunda necesidad de enseñar y acompañar a las niñeces desde la pedagogía del afecto (hooks, 2016), es una postura ética y política que las reconoce genuinamente como seres completos y les otorga un lugar propio, seguro y libre de violencias dentro del aula.
+</p>
 
 </section>
 
 </div>
 
-<button class="top-btn" id="topBtn">
+<button
+id="topBtn"
+class="top-btn"
+onclick="volverArriba()">
 ↑
 </button>
 
 <footer class="footer">
 
 <p>
+<strong>
 Guía de recomendaciones para la prevención de violencias basadas en género en las niñeces
+</strong>
+</p>
+
+<br>
+
+<p>
+Tesis de investigación:
 </p>
 
 <p>
-Jennifer Buitrago López
+Prácticas pedagógicas de docentes de Bogotá y prevención de violencias basadas en género en las niñeces
+</p>
+
+<br>
+
+<p>
+Maestría en educación en estudios de género y educación para la sexualidad
+</p>
+
+<br>
+
+<p>
+Investigadora: Jennifer Buitrago López
 </p>
 
 <p>
-Maestría en Estudios de Género y Educación para la Sexualidad
+jenniferbuitragolopez@gmail.com
+</p>
+
+<p>
++57 313 800 1076
 </p>
 
 </footer>
 
-<script>
-
-/* ACORDEÓN */
-
-const headers =
-document.querySelectorAll(".accordion-header");
-
-headers.forEach(header=>{
-
-header.addEventListener("click",()=>{
-
-document
-.querySelectorAll(".accordion-content")
-.forEach(content=>{
-
-if(content!==header.nextElementSibling){
-
-content.classList.remove("active");
-
-}
-
-});
-
-header.nextElementSibling
-.classList.toggle("active");
-
-});
-
-});
-
-/* CONTENIDO EJES */
-
-const ejes = {
-
-eje1: `
-<h2>🗣️ El lenguaje que reconoce</h2>
-
-<p>
-El lenguaje no es un canal neutro de comunicación: en la escuela se convierte en uno de los principales dispositivos pedagógicos de género (García, 2004). Nombrar de forma intencional y diversa es un acto político que visibiliza y valida a todas las niñeces más allá del binarismo.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Usa un lenguaje en donde se reconozca a niñas, niños y niñeces diversas.</li>
-
-<li>Promueve el reconocimiento de otras culturas desde las expresiones y formas de nombrar propias de niñeces de otras regiones sin caer en la corrección que desvalorice su origen.</li>
-
-<li>Fortalece las dinámicas de participación y escucha del grupo, donde las niñeces tengan las mismas oportunidades para expresar sus ideas.</li>
-
-<li>Valida las emociones y sus expresiones en todas las niñeces.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Evita expresiones como:
-“Por ser niña tienes mejor letra”,
-“Por ser niño eres más fuerte”,
-“Por ser niña debes ser más tierna”,
-“Por ser niño no debes llorar”.
-</p>
-
-</div>
-`,
-
-eje2: `
-<h2>⚖️ La disciplina desde el cuidado</h2>
-
-<p>
-Las acciones de disciplina son uno de los territorios donde más se inscriben los mandatos de género en los cuerpos de las niñeces.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Construye acuerdos de convivencia que tengan presente a todas las niñeces.</li>
-
-<li>Haz una pausa pedagógica para cuestionar colectivamente comentarios sexistas o discriminatorios.</li>
-
-<li>Evita la condescendencia hacia niñas y la sanción automática hacia niños.</li>
-
-<li>Revisa comentarios relacionados con apariencia física, cabello, ropa o aspecto.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Reflexiona sobre el tono, los gestos, la condescendencia y los argumentos utilizados para justificar comportamientos.
-</p>
-
-</div>
-`,
-
-eje3: `
-<h2>🧍 El cuerpo libre de etiquetas</h2>
-
-<p>
-El cuerpo de las niñeces es un territorio simbólico donde se escriben y disputan los mandatos de género.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Usa la pregunta ¿Y qué significa eso? para cuestionar expresiones discriminatorias.</li>
-
-<li>Conversa sobre diversidad estética como riqueza.</li>
-
-<li>Valora a las personas por sus acciones y capacidades, no por su apariencia.</li>
-
-<li>Promueve juegos y actividades diversas para todas las niñeces.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Evita comentarios sobre corporalidades, incluso elogios o bromas que reproduzcan ideales hegemónicos.
-</p>
-
-</div>
-`,
-
-eje4: `
-<h2>🏫 Los espacios compartidos</h2>
-
-<p>
-Los patios, pasillos, canchas y aulas no son territorios neutros.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Implementa dinámicas mixtas y equitativas en el patio.</li>
-
-<li>Diseña metodologías que organicen grupos de forma diversa.</li>
-
-<li>Fortalece la participación de niñas en todos los escenarios escolares.</li>
-
-<li>Revisa que los uniformes no limiten la exploración ni el movimiento.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Propicia estrategias que permitan que todas las niñeces habiten la cancha con las mismas posibilidades.
-</p>
-
-</div>
-`,
-
-eje5: `
-<h2>📚 El currículo y los materiales educativos</h2>
-
-<p>
-El currículo escolar decide qué saberes son legítimos y cuáles invisibilizados.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Revisa las mallas curriculares e identifica términos obsoletos o sexistas.</li>
-
-<li>Transversaliza la educación integral para la sexualidad.</li>
-
-<li>Analiza críticamente imágenes, videos, libros y diapositivas.</li>
-
-<li>Incluye representaciones diversas en los materiales educativos.</li>
-
-<li>Utiliza literatura infantil que cuestione roles de género.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Evita que el enfoque de género se limite a fechas conmemorativas.
-</p>
-
-</div>
-`,
-
-eje6: `
-<h2>👨‍👩‍👧 El trabajo con las familias y el desafío digital</h2>
-
-<p>
-Las prácticas transgresoras suelen enfrentar barreras externas sostenidas por discursos conservadores y por redes sociales.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Genera espacios de diálogo con las familias.</li>
-
-<li>Abre debates críticos sobre contenidos consumidos en internet.</li>
-
-<li>Vincula a las familias en actividades pedagógicas.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Transforma la tensión con las familias posicionando la educación integral para la sexualidad como un asunto de convivencia, derechos humanos y cuidado.
-</p>
-
-</div>
-`,
-
-eje7: `
-<h2>🌎 Niñeces, diversidades y sin silencios</h2>
-
-<p>
-La prevención de las violencias basadas en género requiere una mirada interseccional.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Adapta herramientas de educación sexual para niñeces con discapacidad.</li>
-
-<li>Reconoce y valida la diversidad de acentos y expresiones.</li>
-
-<li>Promueve el reconocimiento de la diversidad étnica y racial.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Ante comentarios racistas, xenófobos o discriminatorios, realiza una pausa pedagógica y pregunta: “¿Qué significa para ti eso?”.
-</p>
-
-</div>
-`,
-
-eje8: `
-<h2>👩‍🏫 Redes docentes y pedagogías del afecto</h2>
-
-<p>
-La prevención de las violencias basadas en género no puede depender únicamente de algunos docentes.
-</p>
-
-<h3>Recomendaciones</h3>
-
-<ul>
-
-<li>Promueve que todo el equipo docente asuma esta responsabilidad.</li>
-
-<li>Impulsa espacios de formación continua entre pares.</li>
-
-<li>Reflexiona sobre la participación de hombres docentes en primera infancia y primaria.</li>
-
-</ul>
-
-<div class="reto">
-
-<strong>Reto pedagógico</strong>
-
-<p>
-Cuestiona tus propias creencias, sesgos y temores frente al género y la educación integral para la sexualidad.
-</p>
-
-</div>
-`
-
-};
-
-function mostrarEje(eje){
-
-const contenedor =
-document.getElementById("contenido-eje");
-
-contenedor.style.display = "block";
-
-contenedor.innerHTML = ejes[eje];
-
-contenedor.scrollIntoView({
-behavior:"smooth",
-block:"start"
-});
-
-}
-
-/* BOTÓN VOLVER ARRIBA */
-
-const topBtn =
-document.getElementById("topBtn");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY > 400){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
-
-});
-
-topBtn.addEventListener("click",()=>{
-
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-
-});
-
-</script>
-
 </body>
+
 </html>
